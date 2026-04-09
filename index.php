@@ -1,6 +1,6 @@
 <?php 
-$url_contact="http://localhost:3000/contact.php" ;
-$url_prueba="/contact.php";
+$url_contact = "http://localhost:3000/contact.php";
+$url_prueba = "/contact.php";
 ?>
 
 <!DOCTYPE html>
@@ -8,7 +8,7 @@ $url_prueba="/contact.php";
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="css/style.css">
     <script src="script.js"></script>
     <script src="https://kit.fontawesome.com/5c162ed7a5.js" crossorigin="anonymous"></script>
     <title>My portafolio</title>
@@ -22,26 +22,26 @@ $url_prueba="/contact.php";
                     <a href="#About" class="header-link">Acerca de mi</a>
                     <a href="#Skills" class="header-link">Conocimientos</a>
                     <a href="#Proyects" class="header-link">Proyectos</a>
-                    <a href="#Tecnologies"  class="header-link">Tecnologías</a>
-                    <a href="<?php echo $url_prueba;?>" class="header-link">Contactame!</a> 
+                    <a href="#Tecnologies" class="header-link">Tecnologías</a>
+                    <a href="<?php echo $url_prueba; ?>" class="header-link">Contactame!</a>
                 </li>
             </ul>
         </nav>
         <i class="header-icon fa-solid fa-code"></i>
-    </header> 
+    </header>
 
     <hr>
 
     <main>
         <article>
 
-            <section id="Home"> 
-            <h1 class="home-h1">Jefferson</h2hom>
-            <h2 class="home-h2">Camargo</h2>
-            <img src="/recursos/mifoto.jpg" alt="mi foto" style="width: 200px; height: auto;">
-            <p class="home-p">Estudiante de Ingeneria de sistemas e informatica</p>
-            <p class="home-p">analista :p</p>
-            <a href="<?php echo $url_prueba;?>" class="home-link">Contactame!</a>
+            <section id="Home">
+                <h1 class="home-h1">Jefferson Aldair</h1>
+                <h2 class="home-h2">Camargo Mamani</h2>
+                <img src="img/mifoto.jpg" alt="mi foto" style="width: 250px; height: auto;">
+                <p class="home-p">Estudiante de Ingeneria de sistemas e informatica</p>
+                <p class="home-p">analista :p</p>
+                <a href="<?php echo $url_prueba; ?>" class="home-link">Contactame!</a>
             </section>
 
             <hr>
@@ -58,45 +58,63 @@ $url_prueba="/contact.php";
 
             <section id="Proyects" class="proyectos-container">
                 <h2 class="proyect-h2">Mis Proyectos</h2>
-                
-                <!-- Sección siempre visible -->
+
                 <div class="proyecto">
-                    <img src="" alt="Proyecto 1">
-                    <h3>proyecto propio</h3>
-                    <p>Uso de Java</p>
-                    <a class="proyect-a" href="https://github.com/Aldair208/ejemplo" target="_blank">Ver más</a>
+
+                    <img src="img/eco-portal.jpg" alt="Vista previa EcoPortal AR">
+                    <h3>EcoPortal AR: Visualización de Impacto Ambiental en el Litoral de Ilo</h3>
+                    <p>Aplicación de Realidad Aumentada (AR) diseñada para concientizar sobre la preservación marina mediante una experiencia inmersiva de 360 grados. El sistema utiliza un "portal virtual" para explorar escenarios comparativos del Muelle de Southern Perú.</p>
+                    
+                    <div class="botones-proyecto">
+                        <a href="TU_LINK_DE_VIDEO_O_DEMO" class="btn-demo" target="_blank">
+                            <i class="fa-solid fa-play"></i> Ver Demo
+                        </a>
+                        
+                        <a href="https://github.com/Aldair208/AplicacionParaFomentarLaConcienciacionSobreLaContaminacionAmbientalDeOrigenMinero" class="btn-repo" target="_blank">
+                            <i class="fa-brands fa-github"></i> Repositorio
+                        </a>
+                    </div>
                 </div>
-            
+
                 <div class="proyecto">
-                    <img src="" alt="Proyecto 2">
-                    <h3>Proyecto de ADS II</h3>
-                    <p>programa para una cevicheria</p>
-                    <a class="proyect-a" href="" target="_blank">Ver más</a>
+
+                    <img src="img/finanzas-unam.jpg" alt="Vista previa Finanzas Siempre a la Mano">
+                    <h3>Finanzas Siempre a la Mano: Gestión Personal UNAM</h3>
+                    <p>Sistema móvil desarrollado para la gestión de finanzas personales, integrando una arquitectura híbrida que utiliza <strong>Firebase</strong> para la autenticación segura y <strong>Excel</strong> como motor de base de datos para el reporte de gastos.</p>
+                    
+                    <div class="botones-proyecto">
+                        <a href="URL_A_TU_APK" class="btn-demo" target="_blank">
+                            <i class="fa-solid fa-download"></i> Descargar APK
+                        </a>
+                        
+                        <a href="https://github.com/Aldair208/FinanzasSiempreALaMano" class="btn-repo" target="_blank">
+                            <i class="fa-brands fa-github"></i> Repositorio
+                        </a>
+                    </div>
                 </div>
-            
+
                 <div class="proyecto">
-                    <img src="" alt="Proyecto 3">
-                    <h3>Portafolio para jefferson</h3>
-                    <p>Portafolio hecho por mí.</p>
-                    <a class="proyect-a" href="/Portafolio-Panda-main/index.html" target="_blank">Ver más</a>
+                    <img src="img/chat-distribuido.jpg" alt="Vista previa Sistema de Comunicación UNAM">
+                    
+                    <h3>Sistema de Comunicación Distribuida en Tiempo Real - UNAM</h3>
+                    
+                    <p>Plataforma de mensajería instantánea diseñada para la coordinación del personal de supervisión de la Universidad Nacional de Moquegua. El sistema facilita la comunicación interconectada entre las distintas sedes universitarias mediante una arquitectura de programación distribuida.</p>
+                    
+                    <div class="botones-proyecto">
+                        <a href="https://chat-unam-dis.onrender.com/" class="btn-demo" target="_blank">
+                            <i class="fa-solid fa-rocket"></i> Ver Sistema
+                        </a>
+                        
+                        <a href="https://github.com/Aldair208/sistema_entrada_unam" class="btn-repo" target="_blank">
+                            <i class="fa-brands fa-github"></i> Repositorio
+                        </a>
+                    </div>
                 </div>
-            
-                <div class="proyecto">
-                    <img src="" alt="Proyecto 4">
-                    <h3>Trabajo de sistemas Operativos</h3>
-                    <p>Programa hecho en Python (interseccion de tareas).</p>
-                    <a class="proyect-a" href="https://github.com/Aldair208/sistemas_operativos" target="_blank">Ver más</a>
-                </div>
-            
+
                 <p class="toggle-more" onclick="toggleProyectos()">Ver más 👇</p>
-
-                <!-- Sección oculta inicialmente -->
-            
-
             </section>
-            
 
-        <hr>
+            <hr>
 
             <section id="Conocimientos">
                 <h1 class="skills-h1">Mis Conocimientos</h1>
@@ -114,7 +132,7 @@ $url_prueba="/contact.php";
                         <td>2 meses</td>
                     </tr>
                     <tr>
-                        <td> <i class="fa-brands fa-html5"></i> HTML y Css <i class="fa-brands fa-css3-alt"></i> </td>
+                        <td><i class="fa-brands fa-html5"></i> HTML y Css <i class="fa-brands fa-css3-alt"></i></td>
                         <td>6 meses</td>
                     </tr>
                     <tr>
@@ -136,63 +154,65 @@ $url_prueba="/contact.php";
 
             <section id="Tecnologias">
                 <h2 class="tecnology-h2">Tecnologías Utilizadas</h2>
-            
-                <!-- Frontend Section -->
-                <h4 class="tecnology-h4" class="frontend-dev">Aprediendo</h4>
+
+                <!-- Aprendiendo -->
+                <h4 class="tecnology-h4 frontend-dev">Aprediendo</h4>
                 <div class="tecnologia frontend-dev">
-                    <i class="fa-brands fa-css3-alt"></i>                    <h3>CSS</h3>
-                    
+                    <i class="fa-brands fa-css3-alt"></i>
+                    <h3>CSS</h3>
                 </div>
-            
+
                 <div class="tecnologia frontend-dev">
-                    <i class="fa-brands fa-html5"></i>                    <h3>HTML</h3>
-                    
+                    <i class="fa-brands fa-html5"></i>
+                    <h3>HTML</h3>
                 </div>
-            
+
                 <div class="tecnologia frontend-dev">
-                    <i class="fa-brands fa-square-js"></i>                    <h3>JS</h3>
-                    
+                    <i class="fa-brands fa-square-js"></i>
+                    <h3>JS</h3>
                 </div>
-            
-                <!-- Backend Section -->
-                <a href="https://experiencev.github.io/isaDev.github.io/SRC/templates/home.html" target="_blank"><h4 class="tecnology-h4 tecnology-h4-isa" class="backend-dev">Lo que se</h4></a>
+
+                <!-- Lo que sé -->
+                <a href="https://experiencev.github.io/isaDev.github.io/SRC/templates/home.html" target="_blank">
+                    <h4 class="tecnology-h4 tecnology-h4-isa backend-dev">Lo que se</h4>
+                </a>
                 <div class="tecnologia backend-dev">
-                    <i class="fa-brands fa-python"></i>                    <h3>Python</h3>
+                    <i class="fa-brands fa-python"></i>
+                    <h3>Python</h3>
                     <p>Lenguaje de programación de uso general</p>
                 </div>
-            
+
                 <div class="tecnologia backend-dev">
-                    <i class="fa-brands fa-java"></i>                    <h3>Java</h3>
-                    <p>Lenguaje de uso ocasional </p>
+                    <i class="fa-brands fa-java"></i>
+                    <h3>Java</h3>
+                    <p>Lenguaje de uso ocasional</p>
                 </div>
             </section>
-            
-            
-            
+
         </article>
     </main>
 
     <footer>
         <div class="about-section">
-          <p>Sobre mi<p>
-          <hr>
-          <p>Mi nombre es Jefferson Camargo y he trabajado en el sector pesquero por dos años.</p>
+            <p>Sobre mi</p>
+            <hr>
+            <p>Mi nombre es Jefferson Camargo y he trabajado en el sector pesquero por dos años.</p>
         </div>
         <div class="contact-section">
-          <p>Contactame<p>
-          <hr>
-          <div class="social-icons">
-            <a href="https://discord.gg/u4XvD9mY" target="_blank" class="fot-icons"><i class="fa-brands fa-discord"></i></a>
-            <a href="https://www.instagram.com/jefff._.xd/" target="_blank" class="fot-icons"><i class="fa-brands fa-instagram"></i></a>
-            <a href="https://github.com/Aldair208?tab=overview&from=2024-05-01&to=2024-05-06" target="_blank" class="fot-icons"><i class="fa-brands fa-github"></i></a>
-            <a href="https://www.facebook.com/jefferson.camargo.948011/" target="_blank" class="fot-icons"><i class="fa-brands fa-facebook"></i></a>
-          </div>
+            <p>Contactame</p>
+            <hr>
+            <div class="social-icons">
+                <a href="https://discord.gg/u4XvD9mY" target="_blank" class="fot-icons"><i class="fa-brands fa-discord"></i></a>
+                <a href="https://www.instagram.com/jefff._.xd/" target="_blank" class="fot-icons"><i class="fa-brands fa-instagram"></i></a>
+                <a href="https://github.com/Aldair208?tab=overview&from=2024-05-01&to=2024-05-06" target="_blank" class="fot-icons"><i class="fa-brands fa-github"></i></a>
+                <a href="https://www.facebook.com/jefferson.camargo.948011/" target="_blank" class="fot-icons"><i class="fa-brands fa-facebook"></i></a>
+            </div>
         </div>
         <div class="bottom-section">
-          <hr>
-          <p>2024</p>
+            <hr>
+            <p>2024</p>
         </div>
-      </footer>
-      
+    </footer>
+
 </body>
 </html>

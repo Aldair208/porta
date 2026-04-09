@@ -406,3 +406,47 @@ hr {
 .bottom-section h3 {
   margin-top: 20px;
 }
+
+/* Contenedor de botones */
+.botones-proyecto {
+    display: flex;
+    gap: 15px; /* Espacio entre botones */
+    justify-content: center;
+    margin-top: 20px;
+}
+
+/* Estilo base para ambos botones */
+.botones-proyecto a {
+    padding: 10px 20px;
+    border-radius: 8px;
+    font-weight: 700;
+    text-decoration: none;
+    transition: all 0.3s ease;
+    display: flex;
+    align-items: center;
+    gap: 8px;
+}
+
+/* Botón Demo (Morado/Acento) */
+.btn-demo {
+    background-color: var(--accent);
+    color: white;
+    border: 2px solid var(--accent);
+}
+
+.btn-demo:hover {
+    background-color: transparent;
+    color: var(--accent);
+}
+
+/* Botón Repositorio (Oscuro/Gris) */
+.btn-repo {
+    background-color: #333;
+    color: white;
+    border: 2px solid #333;
+}
+
+.btn-repo:hover {
+    background-color: transparent;
+    color: white;
+}
