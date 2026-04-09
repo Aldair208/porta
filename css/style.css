@@ -450,3 +450,230 @@ hr {
     background-color: transparent;
     color: white;
 }
+
+
+
+
+/* Contenedor Principal */
+.skills-container {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 25px;
+    justify-content: center;
+    padding: 20px;
+}
+
+/* Estilo de las Tarjetas */
+.skill-card {
+    background-color: #1a1a1a; /* Un gris muy oscuro para resaltar */
+    border: 1px solid var(--accent);
+    border-radius: 15px;
+    padding: 30px;
+    width: 280px;
+    text-align: center;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.skill-card:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 10px 20px rgba(125, 55, 141, 0.3); /* Sombra con el color de acento */
+}
+
+/* Iconos y Títulos */
+.skill-icon {
+    font-size: 2.5rem;
+    color: var(--accent);
+    margin-bottom: 15px;
+}
+
+.skill-card h3 {
+    font-size: 1.4rem;
+    margin-bottom: 10px;
+    color: #fff;
+}
+
+.skill-card p {
+    font-size: 0.9rem;
+    color: #ccc;
+    margin-bottom: 20px;
+}
+
+/* Etiquetas (Tags) de tecnologías */
+.skill-tags {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 8px;
+    justify-content: center;
+}
+
+.skill-tags span {
+    background-color: var(--accent);
+    color: #fff;
+    padding: 5px 12px;
+    border-radius: 20px;
+    font-size: 0.75rem;
+    font-weight: bold;
+}
+
+
+
+
+
+
+
+
+.tech-section {
+    padding: 60px 20px;
+    background-color: #000;
+}
+
+.tech-grid {
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+    max-width: 1000px;
+    margin: 0 auto;
+}
+
+.tech-group {
+    border-left: 3px solid var(--accent);
+    padding-left: 20px;
+}
+
+.group-title {
+    display: block;
+    font-size: 1.1rem;
+    font-weight: bold;
+    color: var(--accent);
+    margin-bottom: 20px;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+}
+
+.tech-items {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 15px;
+}
+
+/* Caja de cada Tecnología */
+.tech-box {
+    background: #111;
+    border: 1px solid #333;
+    padding: 15px 25px;
+    border-radius: 10px;
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    transition: all 0.4s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+}
+
+.tech-box i {
+    font-size: 1.5rem;
+    color: #fff;
+}
+
+.tech-box:hover {
+    border-color: var(--accent);
+    background: rgba(125, 55, 141, 0.1);
+    transform: scale(1.05);
+}
+
+/* Indicador de "Aprendiendo" discreto */
+.tech-box.learning {
+    border-style: dashed;
+    opacity: 0.8;
+}
+
+.tech-box.learning::after {
+    content: "•";
+    color: #ffd700; /* Punto dorado para indicar progreso */
+    font-size: 1.5rem;
+    margin-left: 5px;
+}
+
+.main-footer {
+    background-color: #080808;
+    color: #fff;
+    padding: 60px 20px 20px;
+    border-top: 1px solid #222;
+}
+
+.footer-container {
+    max-width: 1200px;
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 40px;
+}
+
+.footer-column h3 {
+    color: var(--accent);
+    font-size: 1.3rem;
+    margin-bottom: 20px;
+    position: relative;
+}
+
+/* Línea decorativa bajo el título */
+.footer-column h3::after {
+    content: '';
+    position: absolute;
+    left: 0;
+    bottom: -5px;
+    width: 30px;
+    height: 2px;
+    background-color: var(--accent);
+}
+
+.footer-column p {
+    color: #999;
+    line-height: 1.6;
+    font-size: 0.95rem;
+}
+
+/* Enlaces rápidos */
+.footer-links {
+    padding: 0;
+}
+
+.footer-links li {
+    margin-bottom: 10px;
+}
+
+.footer-links a {
+    color: #999;
+    transition: color 0.3s;
+}
+
+.footer-links a:hover {
+    color: var(--accent);
+    padding-left: 5px;
+}
+
+/* Redes Sociales en el Footer */
+.footer-social {
+    display: flex;
+    gap: 15px;
+    margin-top: 15px;
+}
+
+.footer-social a {
+    font-size: 1.5rem;
+    color: #fff;
+    transition: transform 0.3s, color 0.3s;
+}
+
+.footer-social a:hover {
+    color: var(--accent);
+    transform: translateY(-5px);
+}
+
+/* Copyright */
+.footer-bottom {
+    text-align: center;
+    margin-top: 50px;
+    padding-top: 20px;
+    border-top: 1px solid #222;
+    color: #555;
+    font-size: 0.85rem;
+}

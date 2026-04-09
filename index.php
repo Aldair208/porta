@@ -116,103 +116,148 @@ $url_prueba = "/contact.php";
 
             <hr>
 
-            <section id="Conocimientos">
-                <h1 class="skills-h1">Mis Conocimientos</h1>
-                <table>
-                    <tr>
-                        <td><i class="fa-brands fa-java"></i> Java <i class="fa-brands fa-android"></i></td>
-                        <td>Dominio intermedio</td>
-                    </tr>
-                    <tr>
-                        <td><i class="fa-brands fa-python"></i> Python <i class="fa-solid fa-robot"></i></td>
-                        <td>Domino intermedio</td>
-                    </tr>
-                    <tr>
-                        <td><i class="fa-brands fa-square-js"></i> JavaScript <i class="fa-solid fa-window-maximize"></i></td>
-                        <td>2 meses</td>
-                    </tr>
-                    <tr>
-                        <td><i class="fa-brands fa-html5"></i> HTML y Css <i class="fa-brands fa-css3-alt"></i></td>
-                        <td>6 meses</td>
-                    </tr>
-                    <tr>
-                        <td><i class="fa-solid fa-c"></i> C++/C <i class="fa-solid fa-gamepad"></i></td>
-                        <td>1 Año - Conocimientos Básicos-</td>
-                    </tr>
-                    <tr>
-                        <td><i class="fa-solid fa-server"></i> Sql <i class="fa-solid fa-database"></i></td>
-                        <td>Intermedio</td>
-                    </tr>
-                    <tr>
-                        <td><i class="fa-solid fa-video"></i> Edicion de Video <i class="fa-solid fa-clapperboard"></i></td>
-                        <td>3 Años</td>
-                    </tr>
-                </table>
+            <section id="Conocimientos" class="skills-section">
+                <h1 class="skills-h1">Áreas de Especialización</h1>
+                
+                <div class="skills-container">
+                    <div class="skill-card">
+                        <i class="fa-solid fa-code-branch skill-icon"></i>
+                        <h3>Desarrollo de Software</h3>
+                        <p>Creación de aplicaciones robustas y multiplataforma.</p>
+                        <div class="skill-tags">
+                            <span>Java</span> <span>Python</span> <span>C++/C</span>
+                        </div>
+                    </div>
+
+                    <div class="skill-card">
+                        <i class="fa-solid fa-globe skill-icon"></i>
+                        <h3>Desarrollo Web & AR</h3>
+                        <p>Diseño de interfaces modernas y experiencias de Realidad Aumentada.</p>
+                        <div class="skill-tags">
+                            <span>HTML5</span> <span>CSS3</span> <span>JavaScript</span>
+                        </div>
+                    </div>
+
+                    <div class="skill-card">
+                        <i class="fa-solid fa-server skill-icon"></i>
+                        <h3>Datos y Sistemas</h3>
+                        <p>Gestión de bases de datos relacionales y sistemas distribuidos.</p>
+                        <div class="skill-tags">
+                            <span>SQL</span> <span>MySQL</span> <span>Firebase</span>
+                        </div>
+                    </div>
+
+                    <div class="skill-card">
+                        <i class="fa-solid fa-clapperboard skill-icon"></i>
+                        <h3>Producción Digital</h3>
+                        <p>Edición avanzada de video y post-producción audiovisual.</p>
+                        <div class="skill-tags">
+                            <span>3 Años de Exp.</span>
+                        </div>
+                    </div>
+                </div>
             </section>
 
             <hr>
 
-            <section id="Tecnologias">
-                <h2 class="tecnology-h2">Tecnologías Utilizadas</h2>
+            <section id="Tecnologias" class="tech-section">
+                <h2 class="tecnology-h2">Stack Tecnológico</h2>
+                
+                <div class="tech-grid">
+                    <div class="tech-group">
+                        <span class="group-title">Lenguajes de Programación</span>
+                        <div class="tech-items">
+                            <div class="tech-box" title="Dominio Intermedio">
+                                <i class="fa-brands fa-python"></i>
+                                <span>Python</span>
+                            </div>
+                            <div class="tech-box" title="Uso en Proyectos AR y Móvil">
+                                <i class="fa-brands fa-java"></i>
+                                <span>Java</span>
+                            </div>
+                            <div class="tech-box" title="Fundamentos de Algoritmos">
+                                <i class="fa-solid fa-c"></i>
+                                <span>C++</span>
+                            </div>
+                        </div>
+                    </div>
 
-                <!-- Aprendiendo -->
-                <h4 class="tecnology-h4 frontend-dev">Aprediendo</h4>
-                <div class="tecnologia frontend-dev">
-                    <i class="fa-brands fa-css3-alt"></i>
-                    <h3>CSS</h3>
-                </div>
+                    <div class="tech-group">
+                        <span class="group-title">Desarrollo Web (Frontend)</span>
+                        <div class="tech-items">
+                            <div class="tech-box learning">
+                                <i class="fa-brands fa-html5"></i>
+                                <span>HTML5</span>
+                            </div>
+                            <div class="tech-box learning">
+                                <i class="fa-brands fa-css3-alt"></i>
+                                <span>CSS3</span>
+                            </div>
+                            <div class="tech-box learning">
+                                <i class="fa-brands fa-square-js"></i>
+                                <span>JavaScript</span>
+                            </div>
+                        </div>
+                    </div>
 
-                <div class="tecnologia frontend-dev">
-                    <i class="fa-brands fa-html5"></i>
-                    <h3>HTML</h3>
-                </div>
-
-                <div class="tecnologia frontend-dev">
-                    <i class="fa-brands fa-square-js"></i>
-                    <h3>JS</h3>
-                </div>
-
-                <!-- Lo que sé -->
-                <a href="https://experiencev.github.io/isaDev.github.io/SRC/templates/home.html" target="_blank">
-                    <h4 class="tecnology-h4 tecnology-h4-isa backend-dev">Lo que se</h4>
-                </a>
-                <div class="tecnologia backend-dev">
-                    <i class="fa-brands fa-python"></i>
-                    <h3>Python</h3>
-                    <p>Lenguaje de programación de uso general</p>
-                </div>
-
-                <div class="tecnologia backend-dev">
-                    <i class="fa-brands fa-java"></i>
-                    <h3>Java</h3>
-                    <p>Lenguaje de uso ocasional</p>
+                    <div class="tech-group">
+                        <span class="group-title">Base de Datos & Cloud</span>
+                        <div class="tech-items">
+                            <div class="tech-box">
+                                <i class="fa-solid fa-database"></i>
+                                <span>MySQL</span>
+                            </div>
+                            <div class="tech-box">
+                                <i class="fa-solid fa-fire"></i>
+                                <span>Firebase</span>
+                            </div>
+                            <div class="tech-box">
+                                <i class="fa-solid fa-file-excel"></i>
+                                <span>Excel DB</span>
+                            </div>
+                        </div>
+                    </div>
+                    
                 </div>
             </section>
 
         </article>
     </main>
 
-    <footer>
-        <div class="about-section">
-            <p>Sobre mi</p>
-            <hr>
-            <p>Mi nombre es Jefferson Camargo y he trabajado en el sector pesquero por dos años.</p>
+    <footer class="main-footer">
+    <div class="footer-container">
+        <div class="footer-column">
+            <h3>Jefferson Camargo</h3>
+            <p>Estudiante de Ingeniería de Sistemas apasionado por la programación distribuida y la realidad aumentada. Enfocado en crear soluciones tecnológicas que generen impacto positivo.</p>
+            <p><i class="fa-solid fa-location-dot"></i> Ilo, Moquegua - Perú</p>
         </div>
-        <div class="contact-section">
-            <p>Contactame</p>
-            <hr>
-            <div class="social-icons">
-                <a href="https://discord.gg/u4XvD9mY" target="_blank" class="fot-icons"><i class="fa-brands fa-discord"></i></a>
-                <a href="https://www.instagram.com/jefff._.xd/" target="_blank" class="fot-icons"><i class="fa-brands fa-instagram"></i></a>
-                <a href="https://github.com/Aldair208?tab=overview&from=2024-05-01&to=2024-05-06" target="_blank" class="fot-icons"><i class="fa-brands fa-github"></i></a>
-                <a href="https://www.facebook.com/jefferson.camargo.948011/" target="_blank" class="fot-icons"><i class="fa-brands fa-facebook"></i></a>
+
+        <div class="footer-column">
+            <h3>Explorar</h3>
+            <ul class="footer-links">
+                <li><a href="#Home">Inicio</a></li>
+                <li><a href="#About">Acerca de mí</a></li>
+                <li><a href="#Proyects">Proyectos</a></li>
+                <li><a href="contact.php">Contactame!</a></li>
+            </ul>
+        </div>
+
+        <div class="footer-column">
+            <h3>Conectemos</h3>
+            <p>¿Tienes un proyecto en mente? Hablemos.</p>
+            <div class="footer-social">
+                <a href="<?php echo $LINKS['discord']; ?>" target="_blank"><i class="fa-brands fa-discord"></i></a>
+                <a href="<?php echo $LINKS['instagram']; ?>" target="_blank"><i class="fa-brands fa-instagram"></i></a>
+                <a href="<?php echo $LINKS['github']; ?>" target="_blank"><i class="fa-brands fa-github"></i></a>
+                <a href="<?php echo $LINKS['facebook']; ?>" target="_blank"><i class="fa-brands fa-facebook"></i></a>
             </div>
         </div>
-        <div class="bottom-section">
-            <hr>
-            <p>2024</p>
-        </div>
-    </footer>
+    </div>
+
+    <div class="footer-bottom">
+        <p>&copy; 2026 Jefferson Aldair Camargo Mamani | Portafolio Profesional</p>
+    </div>
+</footer>
 
 </body>
 </html>

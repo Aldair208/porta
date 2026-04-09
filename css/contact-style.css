@@ -244,3 +244,230 @@ hr {
 .bottom-section h3 {
   margin-top: 20px;
 }
+
+
+
+.main-footer {
+    background-color: #080808;
+    color: #fff;
+    padding: 60px 20px 20px;
+    border-top: 1px solid #222;
+}
+
+.footer-container {
+    max-width: 1200px;
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 40px;
+}
+
+.footer-column h3 {
+    color: var(--accent);
+    font-size: 1.3rem;
+    margin-bottom: 20px;
+    position: relative;
+}
+
+/* Línea decorativa bajo el título */
+.footer-column h3::after {
+    content: '';
+    position: absolute;
+    left: 0;
+    bottom: -5px;
+    width: 30px;
+    height: 2px;
+    background-color: var(--accent);
+}
+
+.footer-column p {
+    color: #999;
+    line-height: 1.6;
+    font-size: 0.95rem;
+}
+
+/* Enlaces rápidos */
+.footer-links {
+    padding: 0;
+}
+
+.footer-links li {
+    margin-bottom: 10px;
+}
+
+.footer-links a {
+    color: #999;
+    transition: color 0.3s;
+}
+
+.footer-links a:hover {
+    color: var(--accent);
+    padding-left: 5px;
+}
+
+/* Redes Sociales en el Footer */
+.footer-social {
+    display: flex;
+    gap: 15px;
+    margin-top: 15px;
+}
+
+.footer-social a {
+    font-size: 1.5rem;
+    color: #fff;
+    transition: transform 0.3s, color 0.3s;
+}
+
+.footer-social a:hover {
+    color: var(--accent);
+    transform: translateY(-5px);
+}
+
+/* Copyright */
+.footer-bottom {
+    text-align: center;
+    margin-top: 50px;
+    padding-top: 20px;
+    border-top: 1px solid #222;
+    color: #555;
+    font-size: 0.85rem;
+}
+
+/* Contenedor y Header */
+.contact-section {
+    padding: 80px 20px;
+    max-width: 1100px;
+    margin: 0 auto;
+}
+
+.contact-header {
+    text-align: center;
+    margin-bottom: 50px;
+}
+
+.contact-header h1 {
+    font-size: 3rem;
+    color: var(--accent);
+    margin-bottom: 10px;
+}
+
+/* Grid de Contacto */
+.contact-grid {
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+    gap: 50px;
+    align-items: start;
+}
+
+/* Estilo de Botones Sociales Lateral */
+.contact-info h3 {
+    margin-bottom: 25px;
+    font-size: 1.5rem;
+}
+
+.social-icons-wrapper {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+.social-btn {
+    background: #111;
+    border: 1px solid #333;
+    padding: 12px 20px;
+    border-radius: 8px;
+    display: flex;
+    align-items: center;
+    gap: 15px;
+    transition: 0.3s;
+}
+
+.social-btn:hover {
+    border-color: var(--accent);
+    background: rgba(125, 55, 141, 0.1);
+    transform: translateX(10px);
+}
+
+/* Estilo del Formulario */
+.modern-form {
+    background: #0a0a0a;
+    padding: 30px;
+    border-radius: 15px;
+    border: 1px solid #222;
+}
+
+.form-group {
+    margin-bottom: 20px;
+}
+
+.form-group label {
+    display: block;
+    margin-bottom: 8px;
+    font-weight: bold;
+    color: #ccc;
+}
+
+.form-group input, 
+.form-group textarea {
+    width: 100%;
+    padding: 12px;
+    background: #151515;
+    border: 1px solid #333;
+    border-radius: 8px;
+    color: white;
+    transition: 0.3s;
+}
+
+.form-group input:focus, 
+.form-group textarea:focus {
+    border-color: var(--accent);
+    outline: none;
+    background: #1a1a1a;
+}
+
+.submit-btn {
+    width: 100%;
+    background: var(--accent);
+    color: white;
+    padding: 15px;
+    border: none;
+    border-radius: 8px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.submit-btn:hover {
+    opacity: 0.9;
+    transform: translateY(-2px);
+}
+
+/* Acceso Administrativo */
+.admin-access {
+    margin-top: 60px;
+    text-align: center;
+}
+
+.admin-btn {
+    display: inline-block;
+    margin-top: 15px;
+    padding: 10px 25px;
+    background: transparent;
+    border: 1px solid #444;
+    color: #888;
+    border-radius: 30px;
+    font-size: 0.9rem;
+    transition: 0.3s;
+}
+
+.admin-btn:hover {
+    color: #ff4d4d; /* Un color de alerta suave para el sistema */
+    border-color: #ff4d4d;
+}
+
+/* Responsivo */
+@media (max-width: 768px) {
+    .contact-grid {
+        grid-template-columns: 1fr;
+    }
+}
