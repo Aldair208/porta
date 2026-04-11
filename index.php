@@ -182,6 +182,7 @@ $url_prueba = "/contact.php";
                         </div>
                     </div>
 
+                    
                     <div class="tech-group">
                         <span class="group-title">Desarrollo Web (Frontend)</span>
                         <div class="tech-items">

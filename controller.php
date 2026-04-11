@@ -27,13 +27,21 @@ if ($data) {
         $mail->isSMTP();
         $mail->Host       = 'smtp.gmail.com';
         $mail->SMTPAuth   = true;
-        $mail->Username   = 'tu-correo@gmail.com'; // Tu Gmail
-        $mail->Password   = 'tu-clave-de-16-letras'; // La clave de aplicación de Google
+        $mail->Username   = 'jefferson.camargo.ing@gmail.com'; // Tu Gmail
+        $mail->Password   = 'imqttcyzxgqvdbth'; // La clave de aplicación de Google
         $mail->SMTPSecure = PHPMailer::ENCRYPTION_STARTTLS;
         $mail->Port       = 587;
 
-        $mail->setFrom('tu-correo@gmail.com', 'Portafolio Aldair');
-        $mail->addAddress('jeffers0ncamargo208@gmail.com'); // Tu correo destino
+        $mail->SMTPOptions = array(
+            'ssl' => array(
+                'verify_peer' => false,
+                'verify_peer_name' => false,
+                'allow_self_signed' => true
+            )
+        );
+
+        $mail->setFrom('jefferson.camargo.ing@gmail.com', 'Portafolio Aldair');
+        $mail->addAddress('jefferson.camargo.ing@gmail.com'); // Tu correo destino
         $mail->addReplyTo($email, $name); // Para que cuando respondas, le llegue a él
 
         $mail->isHTML(true);
