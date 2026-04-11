@@ -5,6 +5,7 @@ require_once 'includes/config.php';;
 
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -14,16 +15,13 @@ require_once 'includes/config.php';;
 </head>
 
 <body>
-    <header class="sticky-header">
-        <nav>
-            <ul class="header-ul">
-                <li>
-                    <a href="index.html" class="header-link">Regresar</a>
-                </li>
-            </ul>
-        </nav>
-        <i class="header-icon fa-solid fa-code"></i>
-    </header>
+
+    <div class="back-nav">
+        <a href="index.php" class="back-link">
+            <i class="fa-solid fa-arrow-left"></i>
+            <span>Volver</span>
+        </a>
+    </div>
 
     <div class="container contact-section">
         <div class="contact-header">
@@ -35,10 +33,30 @@ require_once 'includes/config.php';;
             <div class="contact-info">
                 <h3>Mis Redes</h3>
                 <div class="social-icons-wrapper">
-                    <a href="https://discord.gg/u4XvD9mY" target="_blank" class="social-btn"><i class="fa-brands fa-discord"></i> Discord</a>
-                    <a href="https://www.instagram.com/jefff._.xd/" target="_blank" class="social-btn"><i class="fa-brands fa-instagram"></i> Instagram</a>
-                    <a href="https://github.com/Aldair208" target="_blank" class="social-btn"><i class="fa-brands fa-github"></i> GitHub</a>
-                    <a href="https://www.facebook.com/jefferson.camargo.948011/" target="_blank" class="social-btn"><i class="fa-brands fa-facebook"></i> Facebook</a>
+                    <a href="<?php echo $LINKS['linkedin']; ?>" target="_blank" class="social-btn linkedin">
+                        <i class="fa-brands fa-linkedin-in"></i> LinkedIn
+                    </a>
+                    
+                    <a href="<?php echo $LINKS['github']; ?>" target="_blank" class="social-btn github">
+                        <i class="fa-brands fa-github"></i> GitHub
+                    </a>
+                    
+                    <a href="<?php echo $LINKS['instagram']; ?>" target="_blank" class="social-btn instagram">
+                        <i class="fa-brands fa-instagram"></i> Instagram
+                    </a>
+                    
+                    <a href="<?php echo $LINKS['facebook']; ?>" target="_blank" class="social-btn facebook">
+                        <i class="fa-brands fa-facebook-f"></i> Facebook
+                    </a>
+                    
+                    <a href="<?php echo $LINKS['whatsapp']; ?>" target="_blank" class="social-btn whatsapp">
+                        <i class="fa-brands fa-whatsapp"></i> WhatsApp
+                    </a>
+                    
+                    <a href="<?php echo $LINKS['spotify']; ?>" target="_blank" class="social-btn spotify">
+                        <i class="fa-brands fa-spotify"></i> Spotify
+                    </a>
+
                 </div>
             </div>
 
