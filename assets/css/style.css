@@ -677,3 +677,301 @@ hr {
     color: #555;
     font-size: 0.85rem;
 }
+
+
+
+
+/* Estilo base para todos los iconos del footer */
+.footer-social .icon-link {
+    width: 45px;
+    height: 45px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: rgba(255, 255, 255, 0.05);
+    border-radius: 50%;
+    color: #fff;
+    font-size: 1.3rem;
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    transition: all 0.4s ease;
+    text-decoration: none;
+}
+
+/* Efectos de Hover con Colores Oficiales */
+
+/* LinkedIn - Azul */
+.linkedin:hover {
+    color: #0077b5;
+    border-color: #0077b5;
+    box-shadow: 0 0 15px rgba(0, 119, 181, 0.5);
+    transform: translateY(-5px);
+}
+
+/* GitHub - Blanco/Gris */
+.github:hover {
+    color: #fff;
+    border-color: #fff;
+    box-shadow: 0 0 15px rgba(255, 255, 255, 0.4);
+    transform: translateY(-5px);
+}
+
+/* Instagram - Degradado Rosa/Naranja */
+.instagram:hover {
+    color: #e4405f;
+    border-color: #e4405f;
+    box-shadow: 0 0 15px rgba(228, 64, 95, 0.5);
+    transform: translateY(-5px);
+}
+
+/* Facebook - Azul Oscuro (Agregado como pediste) */
+.facebook:hover {
+    color: #1877f2;
+    border-color: #1877f2;
+    box-shadow: 0 0 15px rgba(24, 119, 242, 0.5);
+    transform: translateY(-5px);
+}
+
+/* Spotify - Verde */
+.spotify:hover {
+    color: #1db954;
+    border-color: #1db954;
+    box-shadow: 0 0 15px rgba(29, 185, 84, 0.5);
+    transform: translateY(-5px);
+}
+
+
+
+
+.whatsapp-float {
+    position: fixed;
+    width: 60px;
+    height: 60px;
+    bottom: 40px;
+    right: 40px;
+    background-color: #25d366;
+    color: #FFF;
+    border-radius: 50px;
+    text-align: center;
+    font-size: 30px;
+    box-shadow: 2px 2px 10px rgba(0,0,0,0.3);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    z-index: 100;
+    transition: all 0.3s ease;
+}
+
+.whatsapp-float:hover {
+    transform: scale(1.1) rotate(10deg);
+    background-color: #128C7E;
+    color: #FFF;
+}
+
+:root {
+    --accent: #7d378d; /* Tu púrpura */
+    --glass: rgba(15, 15, 15, 0.75);
+}
+
+.sticky-header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 1000;
+    background: var(--glass);
+    backdrop-filter: blur(12px); /* Efecto de desenfoque */
+    -webkit-backdrop-filter: blur(12px);
+    border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+    padding: 0.8rem 0;
+}
+
+.nav-container {
+    max-width: 1200px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 2rem;
+}
+
+.nav-menu {
+    display: flex;
+    list-style: none;
+    gap: 1.5rem;
+}
+
+.nav-container {
+    display: flex;
+    justify-content: space-between; /* Empuja el logo a la izquierda y el botón a la derecha */
+    align-items: center;
+    gap: 2rem; /* Esto crea una separación base entre las tres secciones principales */
+}
+
+.nav-menu {
+    display: flex;
+    list-style: none;
+    gap: 1.5rem; /* Esto separa los links (Home, Sobre mí, etc.) entre sí */
+    margin: 0;
+    padding: 0;
+}
+
+/* Si quieres un espacio extra específico solo antes del botón de contacto */
+.nav-action {
+    margin-left: 2rem; /* Empuja el botón un poco más a la derecha de "Tecnologías" */
+}
+
+.nav-link {
+    color: #ccc;
+    text-decoration: none;
+    font-size: 0.95rem;
+    font-weight: 500;
+    transition: all 0.3s ease;
+    position: relative;
+}
+
+/* Línea animada debajo de los links */
+.nav-link::after {
+    content: '';
+    position: absolute;
+    width: 0;
+    height: 2px;
+    bottom: -5px;
+    left: 0;
+    background-color: var(--accent);
+    transition: width 0.3s ease;
+}
+
+.nav-link:hover::after {
+    width: 100%;
+}
+
+.nav-link:hover {
+    color: #fff;
+}
+
+/* Botón llamativo para Contacto */
+/* Botón secundario y elegante para el header */
+.btn-contact-outline {
+    background: transparent;
+    border: 1px solid var(--accent); /* Tu púrpura, pero más fino */
+    color: var(--accent);
+    padding: 0.5rem 1rem; /* Más compacto */
+    border-radius: 6px; /* Borde más sutil */
+    text-decoration: none;
+    font-size: 0.85rem; /* Letra un poco más pequeña */
+    font-weight: 500;
+    transition: all 0.3s ease;
+}
+
+.btn-contact-outline:hover {
+    background: var(--accent); /* Al pasar el mouse, se llena sutilmente */
+    color: #fff;
+    box-shadow: 0 0 10px #d9d3da33; /* Brillo muy leve */
+}
+
+.logo i {
+    font-size: 1.5rem;
+    color: var(--accent);
+}
+
+
+/* Estenedor para centralizar el botón principal */
+.main-action {
+    display: flex;
+    justify-content: center;
+    margin-top: 30px; /* Separación de la foto y texto */
+}
+
+/* Botón protagonista con Neo-Brillo */
+.btn-contact-glow {
+    background: var(--accent);
+    color: #fff;
+    padding: 1rem 2.5rem; /* Más ancho y prominente */
+    border-radius: 50px; /* Borde circular total, muy moderno */
+    text-decoration: none;
+    font-size: 1.1rem; /* Letra más grande y legible */
+    font-weight: bold;
+    border: 2px solid transparent;
+    transition: all 0.4s cubic-bezier(0.175, 0.885, 0.32, 1.275); /* Animación suave y "elástica" */
+    position: relative;
+    overflow: hidden;
+}
+
+/* Efecto de Neo-Brillo (Neón) */
+.btn-contact-glow:hover {
+    background: #fff; /* Al pasar el mouse, el botón se vuelve blanco */
+    color: var(--accent); /* El texto se vuelve púrpura */
+    transform: translateY(-5px); /* Salta ligeramente */
+    box-shadow: 0 15px 30px rgba(125, 55, 141, 0.4), /* Brillo neón púrpura */
+                0 0 15px rgba(125, 55, 141, 0.6);
+}
+
+/* Micro-animación sutil: una línea que pasa */
+.btn-contact-glow::after {
+    content: '';
+    position: absolute;
+    top: -50%;
+    left: -60%;
+    width: 20%;
+    height: 200%;
+    background: rgba(255, 255, 255, 0.3);
+    transform: rotate(30deg);
+    transition: left 0.6s;
+}
+
+.btn-contact-glow:hover::after {
+    left: 120%;
+}
+
+
+/* --- Estilos base (añadir a lo que ya tienes) --- */
+#menu-check, .menu-button, .mobile-only {
+    display: none;
+}
+
+/* --- Responsive (Celulares y Tablets) --- */
+@media (max-width: 768px) {
+    .menu-button {
+        display: block; /* Aparece el icono de barras */
+        font-size: 1.5rem;
+        color: #fff;
+        cursor: pointer;
+    }
+
+    .nav-action {
+        display: none; /* Ocultamos el botón grande del header en móvil */
+    }
+
+    .mobile-only {
+        display: block;
+    }
+
+    .nav-menu {
+        position: fixed;
+        width: 100%;
+        height: 100vh;
+        background: rgba(15, 15, 15, 0.95);
+        backdrop-filter: blur(15px);
+        top: 60px; /* Debajo del header */
+        left: -100%; /* Escondido a la izquierda */
+        flex-direction: column;
+        align-items: center;
+        padding-top: 50px;
+        transition: all 0.5s ease;
+    }
+
+    /* Cuando el checkbox está activo, el menú entra */
+    #menu-check:checked ~ .nav-menu {
+        left: 0;
+    }
+
+    .nav-link {
+        font-size: 1.2rem;
+        margin: 15px 0;
+    }
+
+    .nav-link.highlight {
+        color: var(--accent);
+        font-weight: bold;
+    }
+}

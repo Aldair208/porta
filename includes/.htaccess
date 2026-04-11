@@ -1,0 +1,8 @@
+# Impedir que se listen los archivos de esta carpeta
+Options -Indexes
+
+# Denegar el acceso a todos los archivos .php de esta carpeta desde el navegador
+<Files "*.php">
+    Order Deny,Allow
+    Deny from all
+</Files>

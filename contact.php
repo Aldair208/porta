@@ -1,11 +1,14 @@
-<?php $url_con="/modulo/index" ?>
-<?php include 'config.php'; ?>
+
+<?php 
+require_once 'includes/config.php';; 
+?>
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="css/contact-style.css">
+    <link rel="stylesheet" href="assets/css/contact-style.css">
     <script src="https://kit.fontawesome.com/5c162ed7a5.js" crossorigin="anonymous"></script>
     <title>Contactame</title>
 </head>
@@ -68,46 +71,8 @@
         }
     </script>
 
-    <footer class="main-footer">
-        <div class="footer-container">
-            <div class="footer-column">
-                <h3>Aldair Camargo</h3>
-                <p>Estudiante de Ingeniería de Sistemas apasionado por la programación distribuida y la realidad aumentada. Enfocado en crear soluciones tecnológicas que generen impacto positivo.</p>
-                <p><i class="fa-solid fa-location-dot"></i> Ilo, Moquegua - Perú</p>
-            </div>
-
-            <div class="footer-column">
-                <h3>Explorar</h3>
-                <ul class="footer-links">
-                    <li><a href="#Home">Inicio</a></li>
-                    <li><a href="#About">Acerca de mí</a></li>
-                    <li><a href="#Proyects">Proyectos</a></li>
-                    <li><a href="contact.php">Contactame!</a></li>
-                </ul>
-            </div>
-
-            <div class="footer-column">
-                <h3>Conectemos</h3>
-                <p>¿Tienes un proyecto en mente? Hablemos.</p>
-                <div class="footer-social">
-                    <a href="<?php echo $LINKS['discord']; ?>" target="_blank"><i class="fa-brands fa-discord"></i></a>
-                    <a href="<?php echo $LINKS['instagram']; ?>" target="_blank"><i class="fa-brands fa-instagram"></i></a>
-                    <a href="<?php echo $LINKS['github']; ?>" target="_blank"><i class="fa-brands fa-github"></i></a>
-                    <a href="<?php echo $LINKS['facebook']; ?>" target="_blank"><i class="fa-brands fa-facebook"></i></a>
-                </div>
-            </div>
-        </div>
-
-        <div class="footer-bottom">
-            <p>&copy; 2026 Aldair Camargo Mamani | Portafolio Profesional</p>
-        </div>
-    </footer>
-
 
     <script src="js/script.js"></script> 
-
-    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js"></script>
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.min.js"></script>
 
 </body>
 </html>

@@ -1,6 +1,5 @@
 <?php 
-$url_contact = "http://localhost:3000/contact.php";
-$url_prueba = "/contact.php";
+include_once 'includes/config.php';
 ?>
 
 <!DOCTYPE html>
@@ -8,26 +7,36 @@ $url_prueba = "/contact.php";
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="css/style.css">
-    <script src="script.js"></script>
+    <link rel="stylesheet" href="assets/css/style.css">
+    <script src="assets/js/script.js"></script>
     <script src="https://kit.fontawesome.com/5c162ed7a5.js" crossorigin="anonymous"></script>
     <title>My portafolio</title>
 </head>
 <body>
     <header class="sticky-header">
-        <nav>
-            <ul class="header-ul">
-                <li>
-                    <a href="#Home" class="header-link">Home</a>
-                    <a href="#About" class="header-link">Acerca de mi</a>
-                    <a href="#Skills" class="header-link">Conocimientos</a>
-                    <a href="#Proyects" class="header-link">Proyectos</a>
-                    <a href="#Tecnologies" class="header-link">Tecnologías</a>
-                    <a href="<?php echo $url_prueba; ?>" class="header-link">Contactame!</a>
-                </li>
+        <nav class="nav-container">
+            <div class="logo">
+                <i class="fa-solid fa-code"></i>
+            </div>
+
+            <input type="checkbox" id="menu-check">
+            <label for="menu-check" class="menu-button">
+                <i class="fa-solid fa-bars"></i>
+            </label>
+
+            <ul class="nav-menu">
+                <li><a href="#Home" class="nav-link">Inicio</a></li>
+                <li><a href="#About" class="nav-link">Sobre mí</a></li>
+                <li><a href="#Proyects" class="nav-link">Proyectos</a></li>
+                <li><a href="#Conocimientos" class="nav-link">Especialización</a></li>
+                <li><a href="#Tecnologias" class="nav-link">Tecnologías</a></li>
+                <li class="mobile-only"><a href="contact.php" class="nav-link highlight">Contactame!</a></li>
             </ul>
+
+            <div class="nav-action">
+                <a href="contact.php" class="btn-contact-outline">Contactame!</a>
+            </div>
         </nav>
-        <i class="header-icon fa-solid fa-code"></i>
     </header>
 
     <hr>
@@ -41,11 +50,13 @@ $url_prueba = "/contact.php";
                 <img src="img/mifoto.jpg" alt="mi foto" style="width: 250px; height: auto;">
                 <p class="home-p">Estudiante de Ingeneria de sistemas e informatica</p>
                 <p class="home-p">analista :p</p>
-                <a href="<?php echo $url_prueba; ?>" class="home-link">Contactame!</a>
+                <div class="main-action">
+                    <a href="contact.php" class="btn-contact-glow">Contactame!</a>
+                </div>
             </section>
 
             <hr>
-
+    
             <section id="About">
                 <div class="about-div">
                     <h1 class="about-h1">Mas sobre mi...</h1>
@@ -230,7 +241,7 @@ $url_prueba = "/contact.php";
         <div class="footer-column">
             <h3>Jefferson Camargo</h3>
             <p>Estudiante de Ingeniería de Sistemas apasionado por la programación distribuida y la realidad aumentada. Enfocado en crear soluciones tecnológicas que generen impacto positivo.</p>
-            <p><i class="fa-solid fa-location-dot"></i> Ilo, Moquegua - Perú</p>
+            <p><i class="fa-solid fa-location-dot"></i>  Ilo, Moquegua - Perú</p>
         </div>
 
         <div class="footer-column">
@@ -247,10 +258,21 @@ $url_prueba = "/contact.php";
             <h3>Conectemos</h3>
             <p>¿Tienes un proyecto en mente? Hablemos.</p>
             <div class="footer-social">
-                <a href="<?php echo $LINKS['discord']; ?>" target="_blank"><i class="fa-brands fa-discord"></i></a>
-                <a href="<?php echo $LINKS['instagram']; ?>" target="_blank"><i class="fa-brands fa-instagram"></i></a>
-                <a href="<?php echo $LINKS['github']; ?>" target="_blank"><i class="fa-brands fa-github"></i></a>
-                <a href="<?php echo $LINKS['facebook']; ?>" target="_blank"><i class="fa-brands fa-facebook"></i></a>
+                <a href="<?php echo $LINKS['linkedin']; ?>" class="icon-link linkedin" title="LinkedIn">
+                    <i class="fa-brands fa-linkedin-in"></i>
+                </a>
+                <a href="<?php echo $LINKS['github']; ?>" class="icon-link github" title="GitHub">
+                    <i class="fa-brands fa-github"></i>
+                </a>
+                <a href="<?php echo $LINKS['instagram']; ?>" class="icon-link instagram" title="Instagram">
+                    <i class="fa-brands fa-instagram"></i>
+                </a>
+                <a href="<?php echo $LINKS['facebook']; ?>" class="icon-link facebook" title="Facebook">
+                    <i class="fa-brands fa-facebook-f"></i>
+                </a>
+                <a href="<?php echo $LINKS['spotify']; ?>" class="icon-link spotify" title="Spotify">
+                    <i class="fa-brands fa-spotify"></i>
+                </a>
             </div>
         </div>
     </div>
@@ -259,6 +281,10 @@ $url_prueba = "/contact.php";
         <p>&copy; 2026 Jefferson Aldair Camargo Mamani | Portafolio Profesional</p>
     </div>
 </footer>
+
+<a href="<?php echo $LINKS['whatsapp']; ?>" class="whatsapp-float" target="_blank">
+    <i class="fa-brands fa-whatsapp"></i>
+</a>
 
 </body>
 </html>

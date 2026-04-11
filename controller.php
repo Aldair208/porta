@@ -1,6 +1,8 @@
 <?php
 // 1. Cargar la conexión y PHPMailer
-require_once 'conexion.php'; 
+require_once 'includes/conexion.php'; 
+require_once 'includes/config.php';
+
 use PHPMailer\PHPMailer\PHPMailer;
 use PHPMailer\PHPMailer\Exception;
 
