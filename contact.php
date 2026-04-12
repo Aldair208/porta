@@ -1,6 +1,6 @@
 
 <?php 
-require_once 'includes/config.php';; 
+require_once 'includes/config.php';
 ?>
 
 <!DOCTYPE html>
@@ -83,14 +83,7 @@ require_once 'includes/config.php';;
         </div>
     </div>
 
-    <script>
-        function enviarCorreo() {
-            alert('Correo enviado correctamente');
-        }
-    </script>
-
-
-    <script src="js/script.js"></script> 
+    <script src="assets/js/script.js"></script> 
 
 </body>
 </html>

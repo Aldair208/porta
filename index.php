@@ -47,7 +47,7 @@ include_once 'includes/config.php';
             <section id="Home">
                 <h1 class="home-h1">Jefferson Aldair</h1>
                 <h2 class="home-h2">Camargo Mamani</h2>
-                <img src="img/mifoto.jpg" alt="mi foto" style="width: 250px; height: auto;">
+                <img src="assets/img/mifoto.jpg" alt="mi foto" style="width: 250px; height: auto;">
                 <p class="home-p">Estudiante de Ingeneria de sistemas e informatica</p>
                 <p class="home-p">analista :p</p>
                 <div class="main-action">

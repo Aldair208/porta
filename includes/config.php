@@ -1,14 +1,23 @@
 <?php
-// Configuración Global de Enlaces
+
+define('DB_HOST', 'localhost');
+define('DB_NAME', 'tu_base_de_datos');
+define('DB_USER', 'root');
+define('DB_PASS', '');
+
+define('SMTP_USER', 'jefferson.camargo.ing@gmail.com');
+define('SMTP_PASS', 'imqttcyzxgqvdbth'); // Tu clave de 16 letras
+
 
 ini_set('display_errors', 1);
 error_reporting(E_ALL);
 
 $LINKS = [
     
-    "contacto" => "contact.php",
 
-    "whatsapp" => "https://wa.me/993972276",
+    "contacto"  => "contact.php",
+
+    "whatsapp"  => "https://wa.me/993972276",
     "instagram" => "https://www.instagram.com/jeff_.camargo/",
     "github"    => "https://github.com/Aldair208",
     "facebook"  => "https://www.facebook.com/jeff.camargo208/",

@@ -1,4 +1,5 @@
 <?php
+
 // 1. Cargar la conexión y PHPMailer
 require_once 'includes/conexion.php'; 
 require_once 'includes/config.php';
@@ -6,9 +7,9 @@ require_once 'includes/config.php';
 use PHPMailer\PHPMailer\PHPMailer;
 use PHPMailer\PHPMailer\Exception;
 
-require 'libs/PHPMailer/src/Exception.php';
-require 'libs/PHPMailer/src/PHPMailer.php';
-require 'libs/PHPMailer/src/SMTP.php';
+require './libs/PHPMailer/src/Exception.php';
+require './libs/PHPMailer/src/PHPMailer.php';
+require './libs/PHPMailer/src/SMTP.php';
 
 // 2. Recibir los datos del script.js
 $data = json_decode(file_get_contents('php://input'), true);
@@ -21,7 +22,9 @@ if ($data) {
     try {
         // 3. Insertar en la Base de Datos usando sentencias preparadas (Seguridad)
         $sql = "INSERT INTO contacto (nombre, email, contenido) VALUES (:name, :email, :message)";
-        $stmt = $conexion->prepare($sql);
+        // Cambia $conexion por $pdo (o el nombre que uses en conexion.php)
+        
+        $stmt = $conexion->prepare($sql); 
         $stmt->execute(['name' => $name, 'email' => $email, 'message' => $message]);
 
         // 4. Configurar el envío de correo
