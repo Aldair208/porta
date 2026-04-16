@@ -25,8 +25,8 @@ require_once 'includes/config.php';
 
     <div class="container contact-section">
         <div class="contact-header">
-            <h1>¡Hablemos!</h1>
-            <p>¿Tienes alguna duda o propuesta? Envíame un mensaje y te responderé lo antes posible.</p>
+            <h1>Propuestas y Colaboraciones</h1>
+            <p>¿Tienes alguna propuesta? Envíame un mensaje y te responderé lo antes posible.</p>
         </div>
 
         <div class="contact-grid">
@@ -63,18 +63,18 @@ require_once 'includes/config.php';
             <div class="contact-form-container">
                 <form id="userForm" class="modern-form">
                     <div class="form-group">
-                        <label for="name">Nombre Completo</label>
+                        <label for="name">Representante o Nombre Completo</label>
                         <input type="text" id="name" name="name" placeholder="Tu nombre..." required>
                     </div>
 
                     <div class="form-group">
-                        <label for="email">Correo Electrónico</label>
+                        <label for="email">Correo Institucional o Corporativo</label>
                         <input type="email" id="email" name="email" placeholder="ejemplo@gmail.com" required>
                     </div>
 
                     <div class="form-group">
-                        <label for="message">Mensaje</label>
-                        <textarea id="message" name="message" rows="5" placeholder="Cuéntame sobre tu proyecto..." required></textarea>
+                        <label for="message">Descripción de la Propuesta o Proyecto</label>
+                        <textarea id="message" name="message" rows="5" placeholder="Cuéntame ..." required></textarea>
                     </div>
 
                     <button type="submit" class="submit-btn">Enviar Mensaje <i class="fa-solid fa-paper-plane"></i></button>

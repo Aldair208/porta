@@ -1,7 +1,7 @@
 <?php
 
 define('DB_HOST', 'localhost');
-define('DB_NAME', 'tu_base_de_datos');
+define('DB_NAME', 'portafolio');
 define('DB_USER', 'root');
 define('DB_PASS', '');
 

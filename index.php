@@ -44,14 +44,27 @@ include_once 'includes/config.php';
     <main>
         <article>
 
-            <section id="Home">
-                <h1 class="home-h1">Jefferson Aldair</h1>
-                <h2 class="home-h2">Camargo Mamani</h2>
-                <img src="assets/img/mifoto.jpg" alt="mi foto" style="width: 250px; height: auto;">
-                <p class="home-p">Estudiante de Ingeneria de sistemas e informatica</p>
-                <p class="home-p">analista :p</p>
-                <div class="main-action">
-                    <a href="contact.php" class="btn-contact-glow">Contactame!</a>
+            <section id="Home" class="home-container">
+                <div class="home-content">
+                    <h1 class="home-title">Jefferson Aldair <span class="last-name">Camargo Mamani</span></h1>
+                    
+                    <div class="profile-img-container">
+                       <img src="assets/img/mifoto.jpg" alt="mi foto" style="width: 250px; height: auto;">
+
+                    </div>
+
+                    <div class="home-details">
+                        <p class="role-text">Ingeniero de Sistemas e Informática en formación</p>
+                        <div class="specialties">
+                            <span>Inteligencia Artificial</span> • 
+                            <span>Análisis de Datos</span> • 
+                            <span>Estrategia de Negocios</span>
+                        </div>
+                    </div>
+
+                    <div class="main-action">
+                        <a href="contact.php" class="btn-contact-glow">Contáctame</a>
+                    </div>
                 </div>
             </section>
 
@@ -59,8 +72,18 @@ include_once 'includes/config.php';
     
             <section id="About">
                 <div class="about-div">
-                    <h1 class="about-h1">Mas sobre mi...</h1>
-                    <p class="about-p">Mi nombre es Jefferson, también conocido como Jeff. Soy un estudiante que anteriormente estudiaba una carrera tecnica, pero encontré mi pasión en la programación con tan solo 3 años en este mundo. He descubierto varias cosas que me apasionan, pero mi sueño es poder vivir trabajando en línea y así tener la posibilidad de viajar por el mundo mientras trabajo. Me gustaría enfocarme principalmente en el redes, pero también tengo interés en aprender vistas, base de datos, poo, FrontEnd, Desarrollo Android y todo lo demás que encuentre en mi camino. Actualmente, mis habilidades más destacadas son Base de datos y FrontEnd, ¡aunque sigo aprendiendo!
+                    <h1 class="about-h1">Sobre mi trayectoria y visión</h1>
+                    
+                    <p class="about-p">
+                        Soy <b>Jefferson Camargo</b>, estudiante de Ingeniería de Sistemas en mis últimos ciclos y orgullosamente nacido en <b>Ilo, Moquegua</b>. Mi camino tecnológico comenzó con una sólida base técnica, pero mi verdadera pasión despertó al descubrir el poder de la programación. Actualmente, me especializo en el desarrollo de soluciones mediante <b>Inteligencia Artificial</b>, dominando <b>Python</b> y el diseño de <b>Redes Neuronales</b> para resolver problemas de alta complejidad.
+                    </p>
+
+                    <p class="about-p">
+                        Me defino como una persona <b>responsable, creativa y empática</b>. Además de la ingeniería, me apasionan los <b>negocios físicos</b> y la libertad que ofrece la <b>playa</b>. Poseo una curiosidad insaciable: disfruto sumergirme en temas de los que no tengo idea, descifrando su lógica poco a poco hasta dominarlos por completo. No solo busco escribir código, sino diseñar sistemas que aporten <b>estatus, rentabilidad y eficiencia</b> a las organizaciones mediante una mentalidad estratégica empresarial.
+                    </p>
+
+                    <p class="about-p">
+                        Mi meta es enfrentar desafíos de gran escala en <b>sectores mineros e industriales</b>, contribuyendo al éxito de entidades prestigiosas a nivel global. Aspiro a consolidar una carrera internacional que me permita gestionar mis propios <b>negocios virtuales</b> y trabajar de forma remota, aportando innovación tecnológica desde cualquier lugar del mundo.
                     </p>
                 </div>
             </section>

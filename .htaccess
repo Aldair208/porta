@@ -1,0 +1,13 @@
+# 1. Evita que se listen los archivos de las carpetas
+Options -Indexes
+
+# 2. Bloquea el acceso directo a archivos de configuración
+<Files "config.php">
+    Order Allow,Deny
+    Deny from all
+</Files>
+
+<Files "conexion.php">
+    Order Allow,Deny
+    Deny from all
+</Files>

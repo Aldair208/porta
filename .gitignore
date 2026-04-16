@@ -1,0 +1,7 @@
+# Ignorar archivos de configuración con claves reales
+includes/config.php
+includes/conexion.php
+
+# Ignorar carpetas de dependencias pesadas si las hubiera
+/libs/PHPMailer/docs
+/libs/PHPMailer/examples

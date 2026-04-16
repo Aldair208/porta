@@ -15,9 +15,20 @@ require './libs/PHPMailer/src/SMTP.php';
 $data = json_decode(file_get_contents('php://input'), true);
 
 if ($data) {
-    $name = $data['name'];
-    $email = $data['email'];
-    $message = $data['message'];
+    $name = htmlspecialchars(strip_tags(trim($data['name'])));
+    $email = filter_var(trim($data['email']), FILTER_SANITIZE_EMAIL);
+    $message = htmlspecialchars(strip_tags(trim($data['message'])));
+
+    if (empty($name) || empty($email) || empty($message)) {
+        echo json_encode(["success" => false, "error" => "Todos los campos son obligatorios"]);
+        exit; // Detenemos la ejecución aquí si algo falta
+    }
+
+    // Validar que el email sea real
+    if (!filter_var($email, FILTER_VALIDATE_EMAIL)) {
+        echo json_encode(["success" => false, "error" => "Email inválido"]);
+        exit;
+    }
 
     try {
         // 3. Insertar en la Base de Datos usando sentencias preparadas (Seguridad)
@@ -32,8 +43,8 @@ if ($data) {
         $mail->isSMTP();
         $mail->Host       = 'smtp.gmail.com';
         $mail->SMTPAuth   = true;
-        $mail->Username   = 'jefferson.camargo.ing@gmail.com'; // Tu Gmail
-        $mail->Password   = 'imqttcyzxgqvdbth'; // La clave de aplicación de Google
+        $mail->Username = SMTP_USER;
+        $mail->Password = SMTP_PASS; // La clave de aplicación de Google
         $mail->SMTPSecure = PHPMailer::ENCRYPTION_STARTTLS;
         $mail->Port       = 587;
 
@@ -61,7 +72,10 @@ if ($data) {
 
     } catch (Exception $e) {
         // Si falla el correo pero se guardó en DB, igual avisamos
-        echo json_encode(["success" => true, "note" => "Guardado en DB, pero error al enviar mail"]);
+        echo json_encode([
+            "success" => true, 
+            "note"    => "Datos guardados en sistema, pero el servicio de correo falló temporalmente."
+        ]);
     }
 } else {
     echo json_encode(["success" => false, "error" => "No se recibieron datos"]);

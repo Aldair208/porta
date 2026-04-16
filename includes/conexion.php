@@ -1,9 +1,14 @@
 <?php 
-$servidor = "localhost";
-$db = "portafolio";
-$username = "root";
-$password = "";
+
+require_once 'config.php';
+
+$servidor = DB_HOST;
+$db = DB_NAME;
+$username = DB_USER;
+$password = DB_PASS;
 $puerto = 3307;
+
+
 
 try {
     // Usamos PDO porque es más seguro contra inyecciones SQL
